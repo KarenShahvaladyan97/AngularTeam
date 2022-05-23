@@ -1,0 +1,37 @@
+.line {
+    align-items: center;
+    margin-top: 30px;
+    display: flex;
+}
+.lineFooter { 
+    display: flex;
+    align-items: center;   
+    margin-top: 30px;
+}
+
+
+.line2 {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;  
+    margin-left: 42px;  
+}
+.lineFooter2 {     
+    margin-top: 30px;  
+    margin-left: 42px;  
+}
+
+.icon {
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.iconText {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    color: #E4E6FF;
+}

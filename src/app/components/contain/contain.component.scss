@@ -1,0 +1,74 @@
+.mainContain {
+    width: 100%;
+    min-height: 735px;
+    background-color: #E9F1F1;
+}
+
+.marginDiv {
+    height: 50px;
+}
+
+.contain {
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    background-color: #FCFFFF;
+    border-radius: 8px;
+}
+
+.containIconsDiv {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 53px;
+}
+
+.miniIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    height: 43px;
+    margin-right: 53px;
+}
+
+.containIcon {
+    width: 43px;
+    height: 43px;
+}
+
+.bigCub {
+    width: 1230px;
+    margin: 0 auto;   
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cub {
+    margin: 8px;
+    width: 291px;
+    height: 92px;
+    background-color: #E1EEEE;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cubText {
+    margin-left: 40px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    width: 220px;
+    height: 22px;
+    color: #686868;
+}
+.dotsIcon{
+    margin-right: 20px;
+    margin-bottom: 50px;
+
+}

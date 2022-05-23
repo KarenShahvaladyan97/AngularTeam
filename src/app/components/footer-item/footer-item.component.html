@@ -1,0 +1,7 @@
+<div class="lineFooter">
+    <img src="{{menuItem.icon}}" alt="#" class="icon">
+    <span class="iconText">{{menuItem.tittle}} </span>
+</div>
+<div class="lineFooter2" *ngFor="let k of menuItem.submenuItems">
+    <app-footer-item [menuItem]="k"></app-footer-item>
+</div>
