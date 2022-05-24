@@ -1,0 +1,20 @@
+<div class="mainContain">
+    <div class="contain">
+        <div class="containIconsDiv">
+            <div class="createEmployee">
+                <img src="../../../assets/Group.png" alt="">
+                <span>Create employee</span>
+            </div>
+            <div class="miniIcons">
+                <img src="../../../assets/Group 73.png" alt="#" class="containIcon">
+                <img src="../../../assets/Group 74.png" alt="#" class="containIcon">
+            </div>
+        </div>
+
+        <div class="bigCub">
+            <app-employe *ngFor="let item of usersList" [user]="item"></app-employe>
+        </div>
+    </div>
+
+
+</div>
