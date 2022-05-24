@@ -54,8 +54,8 @@ export class SideNavComponent implements OnInit {
       submenuItems: []
     }]
 
-   
-    
+
+
 
   ngOnInit(): void {
   }
