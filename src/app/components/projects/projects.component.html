@@ -1,0 +1,49 @@
+<div class="mainContain">
+    <div class="navigatinDiv">
+        <div class="filterBigDiv">
+            <div class="sort">
+                <span class="sortSpan">Sort</span>
+                <img src="../../../assets/Vector (2) (1).png" alt="#" class="slack">
+            </div>
+            <div class="filtr">
+                <img src="../../../assets/Vector (3).png" alt="#">
+            </div>
+        </div>
+
+        <div class="createButtonDiv">
+            <img src="../../../assets/createLogo.png" alt="#" class="createLogo">
+            <span class="createText"> Create project </span>
+        </div>
+    </div>
+
+
+    <div class="myContainer" >
+
+        <!-- <div class="cub" *ngFor="let i of containItems">
+            <span class="cubText">{{i.tittle}}</span>
+            <img src="{{i.img}}" alt="#" class="dotsIcon">
+        </div>   -->
+        <div class="profileBigDiv" *ngFor="let i of projectItemsArray">        
+        <app-project-user [projectItem]="i" ></app-project-user>
+    </div>
+
+        
+
+
+
+
+        
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</div>
