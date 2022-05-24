@@ -1,86 +1,31 @@
 <div class="mainContain">
     <div class="marginDiv"></div>
-
+    <div class="containIconsDiv">
+        <span class="birdText">Bids</span>
+        <div class="miniIcons">
+            <img src="../../../assets/Group 74.png" alt="#" class="containIcon">
+            <img src="../../../assets/Group 73.png" alt="#" class="containIcon">
+        </div>
+    </div>
+    <div class="chengDiv">
+        <span class="chengSpan">Source</span>
+        <span class="chengSpan2">Applied date</span>
+        <span class="chengSpan3">Direction</span>
+        <span class="chengSpan4">Client Name</span>
+        <span class="chengSpan5">Duration</span>
+        <span class="chengSpan6">Description</span>
+    </div>
     <div class="contain">
-        <div class="containIconsDiv">
-            <div class="miniIcons">
-                <img src="../../../assets/Group 74.png" alt="#" class="containIcon">
-                <img src="../../../assets/Group 73.png" alt="#" class="containIcon">
+        <div class="bigDiv1" *ngFor="let npm1 of containItems">
+            <div class="iconDiv">
+                <img src={{npm1.img}} alt="#" class="imgStyle">
             </div>
+            <div class="dataDiv">{{npm1.title1}}</div>
+            <div class="directionDiv">{{npm1.title2}}</div>
+            <div class="clientDiv">{{npm1.title3}}</div>
+            <div class="durationDiv">{{npm1.title4}}</div>
+            <div class="descriptionDiv"><span class="lastSpan">{{npm1.title5}}</span></div>
         </div>
-
-        <div class="bigCub">
-            <div class="cub" *ngFor="let i of containItems">
-                <span class="cubText">{{i.tittle}}</span>
-                <img src="{{i.img}}" alt="#" class="dotsIcon">
-            </div>            
-            <!-- <div class="cub">
-                <span class="cubText">Properties</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>
-            <div class="cub">
-                <span class="cubText">Tax</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>            
-            <div class="cub">
-                <span class="cubText">Bonuses</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>
-            <div class="cub">
-                <span class="cubText">Internet</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>            
-            <div class="cub">
-                <span class="cubText">Coffee</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>
-            <div class="cub">
-                <span class="cubText">Salary</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>            
-            <div class="cub">
-                <span class="cubText">Transaction Fee</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>
-            <div class="cub">
-                <span class="cubText">Online tools</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>            
-            <div class="cub">
-                <span class="cubText">New office transfer</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>
-            <div class="cub">
-                <span class="cubText">Other</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>            
-            <div class="cub">
-                <span class="cubText">Utilities</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div>
-            <div class="cub">
-                <span class="cubText">Accounting</span>
-                <img src="../../../assets/Group 34.png" alt="#" class="dotsIcon">
-            </div> -->
-
-
-            
-
-
-            
-
-
-            
-
-        </div>
-
-
-
-
-
-
 
     </div>
-
-
 </div>
