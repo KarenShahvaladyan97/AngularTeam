@@ -4,26 +4,21 @@
     background-color: #E9F1F1;
 }
 
-.marginDiv {
-    height: 50px;
-}
-
 .contain {
     min-height: 600px;
     margin-left: auto;
     margin-right: auto;
     width: 1300px;
-    background-color: #FCFFFF;
     border-radius: 8px;
 }
 
 .containIconsDiv {
     width: 100%;
     height: 115px;
-    display: flex;
     justify-content: end;
     align-items: center;
     margin-right: 53px;
+    padding: 40px;
 }
 
 .miniIcons {
@@ -32,6 +27,7 @@
     width: 110px;
     height: 43px;
     margin-right: 53px;
+    float: right;
 }
 
 .containIcon {
@@ -41,34 +37,162 @@
 
 .bigCub {
     width: 1230px;
-    margin: 0 auto;   
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-.cub {
-    margin: 8px;
-    width: 291px;
-    height: 92px;
-    background-color: #E1EEEE;
-    border-radius: 8px;
+.birdText {
+    font-size: 25px;
+}
+
+.chengDiv {
+    border: none;
+    height: 50px;
+    margin: auto;
+    width: 90%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0px;
 }
 
-.cubText {
-    margin-left: 40px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 22px;
-    width: 220px;
-    height: 22px;
-    color: #686868;
+.chengSpan {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
 }
-.dotsIcon{
-    margin-right: 20px;
-    margin-bottom: 50px;
 
+.chengSpan2 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 110px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan3 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 66px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan4 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 85px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan5 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 75px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan6 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 120px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bigDiv1 {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 8px;
+    display: flex;
+}
+
+.iconDiv {
+    border: none;
+    width: 15%;
+    height: 100px;
+}
+
+.dataDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 15%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.directionDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 15%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.clientDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 15%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.durationDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 15%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.descriptionDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 25%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.lastSpan {
+    display: block;
+    margin-top: 11px;
+    line-height: 21px;
+}
+
+.imgStyle {
+    margin: 30px;
+    width: 120px;
 }

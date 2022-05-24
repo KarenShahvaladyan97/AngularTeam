@@ -9,58 +9,37 @@ export class ContainComponent implements OnInit {
 
   public containItems = [
     {
-      tittle: 'Rent',
-      img: '../../../assets/Group 34.png'
+      img:'../../../assets/2s.png',
+      title1:'causal leave',
+      title2:'8.21.2021 - 8.22.2021',
+      title3:'Name01',
+      title4:'1 Month        ',
+      title5:'Lorem Ipsnce the 1500s, when an unknown printer took a galley of type specimen book.',
     },
     {
-      tittle: 'Properties',
-      img: '../../../assets/Group 34.png'
+      img:'../../../assets/3s.png',
+      title1:'causal leave',
+      title2:'8.21.2021 - 8.22.2021',
+      title3:'Name02',
+      title4:'2 Month        ',
+      title5:'Lorem Ipsnce the 1500s, when an unknown printer took a galley of type specimen book.',
     },
     {
-      tittle: 'Tax',
-      img: '../../../assets/Group 34.png'
+      img:'../../../assets/4s.png',
+      title1:'causal leave',
+      title2:'8.21.2021 - 8.22.2021',
+      title3:'Name02',
+      title4:'2 Month        ',
+      title5:'Lorem Ipsnce the 1500s, when an unknown printer took a galley of type specimen book.',
     },
     {
-      tittle: 'Bonuses',
-      img: '../../../assets/Group 34.png'
+      img:'../../../assets/1s.png',
+      title1:'causal leave',
+      title2:'8.21.2021 - 8.22.2021',
+      title3:'Name02',
+      title4:'2 Month        ',
+      title5:'Lorem Ipsnce the 1500s, when an unknown printer took a galley of type specimen book.',
     },
-    {
-      tittle: 'Internet',
-      img: '../../../assets/Group 34.png'
-    },
-    {
-      tittle: 'Coffee',
-      img: '../../../assets/Group 34.png'
-    },
-    {
-      tittle: 'Salary',
-      img: '../../../assets/Group 34.png'
-    },
-    {
-      tittle: 'Transaction Fee',
-      img: '../../../assets/Group 34.png'
-    },
-    {
-      tittle: 'Online tools',
-      img: '../../../assets/Group 34.png'
-    },
-    {
-      tittle: 'New office transfer',
-      img: '../../../assets/Group 34.png'
-    },
-    {
-      tittle: 'Other',
-      img: '../../../assets/Group 34.png'
-    },
-    {
-      tittle: 'Utilities',
-      img: '../../../assets/Group 34.png'
-    },
-    {
-      tittle: 'Accounting',
-      img: '../../../assets/Group 34.png'
-    },
-
   ]
 
 
