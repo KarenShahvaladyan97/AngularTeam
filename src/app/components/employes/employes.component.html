@@ -12,20 +12,7 @@
         </div>
 
         <div class="bigCub">
-            <div class="cub" *ngFor="let i of usersList">
-                <div>
-                    <div class="option"><img src="../../../assets/Group 34.png" alt="#"></div>
-                    <div class="middle">
-                        <img src="{{i.img}}" alt="">
-                        <span>{{i.profession}}</span>
-                        <p>{{i.fullName}}</p>
-                    </div>
-                    <div class="footer">
-                        <div><img src="../../../assets/Vector.png" alt=" "><span>Address:{{i.addres}}</span></div>
-                        <div><img src="../../../assets/Vector (1).png" alt=" "><span>Phone:{{i.phone}}</span></div>
-                    </div>
-                </div>
-            </div>
+            <app-employe *ngFor="let item of usersList" [user]="item"></app-employe>
         </div>
     </div>
 
