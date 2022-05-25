@@ -7,8 +7,8 @@
 
     <div class="profileImageName">
         <div class="ex">
-            <img src="{{projectItem.user}}" alt="#" class="profilelogo">
-            <span class="text text1"> {{projectItem.username}}</span>
+            <img src="{{projectItem.clientContact.img}}" alt="#" class="profilelogo">
+            <span class="text text1"> {{projectItem.clientContact.name}}</span>
         </div>
         <div class="centerFlex">
             <span class="tag">{{projectItem.status}}</span>
@@ -17,25 +17,21 @@
     <div class="developersDiv">
         <span class="text"> Developers </span>
         <div class="iconsDiv">
-            <img src="../../../assets/prof1.png" alt="#" class="image">
-            <img src="../../../assets/prof2.png" alt="#" class="image position">
-            <img src="../../../assets/prof3.png" alt="#" class="image position">
+            <img src="{{i.img}}" alt="#" class="image position" *ngFor="let i of projectItem.developers">            
         </div>
     </div>
     <div class="developersDiv">
         <span class="text"> Tecnologies </span>
-        <div class="mysql">
-            <span class="programs">Stripe</span>
-            <span class="programs">MySQL</span>
-            <span class="programs">YII/YII2</span>
-            <span class="programs">Angular</span>
+        <div class="mysql" >
+            <span class="programs" *ngFor="let k of projectItem.technologies">{{k}}</span>
+           
         </div>
         <span class="text"> Task Complated </span>
     </div>
 
     <div class="lastDiv">
         <div class="tokosDiv">
-            <span class="tokos">99 %</span>
+            <span class="tokos">{{projectItem.taskCompleted}} %</span>
         </div>
         <img src="../../../assets/mountain.png" alt="#" class="lastImage">
     </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Project } from 'src/app/models/project';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -7,73 +7,53 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  public projectItemsArray = [
+  public projectItemsArray: Project[] = [
     {
-      username: "Gevorg Arakel",
+      clientContact: {
+        name: "Poxos Poxosyan",
+        img: "../../../assets/prof1.png"
+      },
+      title: 'Stage App',
       icon: "../../../assets/stageApp.png",
-      user: '../../../assets/prof1.png',      
-      status:'Finished'
+      developers: [
+        {
+          img: "../../../assets/prof1.png",
+          profession: "driver",
+          fullName: "Vardan",
+          addres: "Gyumri",
+          phone: 37477775747
+        },
+        {
+          img: "../../../assets/prof2.png",
+          profession: "groxusevcav",
+          fullName: "Arman",
+          addres: "Erevan",
+          phone: 37477775747
+        },
+        {
+          img: "../../../assets/prof3.png",
+          profession: "driver",
+          fullName: "Vardan",
+          addres: "Gyumri",
+          phone: 37477775747
+        }
+      ],          
+      status: 'Finished',
+      technologies: [
+        "Stripe", "MySQL", "YII/YII2", "Angular"
+      ],
+      taskCompleted: 98
     },
-    {
-      username: "Poxos Poxosyan",
-      icon: "../../../assets/bob.png",
-      user: '../../../assets/prof1.png',     
-      status:'Ongoing'
-    },
-    {
-      username: "Karen Sargsyan",
-      icon: "../../../assets/stageApp.png",
-      user: '../../../assets/prof1.png',      
-      status:'Finished'
-    },
-    {
-      username: "Gevorg Arakel",
-      icon: "../../../assets/stageApp.png",
-      user: '../../../assets/prof1.png',      
-      status:'Finished'
-    },
-    {
-      username: "Poxos Poxosyan",
-      icon: "../../../assets/bob.png",
-      user: '../../../assets/prof1.png',     
-      status:'Ongoing'
-    },
-    {
-      username: "Karen Sargsyan",
-      icon: "../../../assets/stageApp.png",
-      user: '../../../assets/prof1.png',      
-      status:'Finished'
-    },
-    {
-      username: "Davo Arakel",
-      icon: "../../../assets/stageApp.png",
-      user: '../../../assets/prof1.png',      
-      status:'Finished'
-    },
-    {
-      username: "Poxos Poxosyan",
-      icon: "../../../assets/bob.png",
-      user: '../../../assets/prof1.png',     
-      status:'Ongoing'
-    },
-    {
-      username: "Karen Sargsyan",
-      icon: "../../../assets/stageApp.png",
-      user: '../../../assets/prof1.png',      
-      status:'Finished'
-    },
-    {
-      username: "Poxos Poxosyan",
-      icon: "../../../assets/bob.png",
-      user: '../../../assets/prof1.png',     
-      status:'Ongoing'
-    },
+
+
+
+    
   ]
 
 
 
   constructor() { }
-  
+
 
   ngOnInit(): void {
   }

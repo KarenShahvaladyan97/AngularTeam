@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Client } from 'src/app/models/client';
 
 @Component({
   selector: 'app-project-user',
@@ -9,7 +10,10 @@ export class ProjectUserComponent implements OnInit {
   
 
   constructor() { }
-  @Input() projectItem: { username: string ,icon: string, user: string, status: string }
+  @Input() projectItem: { title: string ,icon: string, clientContact: Client, status: string,
+  developers:{img: string, profession: string, fullName: string, 
+    addres: string, phone: number }[], technologies: string[], taskCompleted: number }
+    
   ngOnInit(): void {
   }
 
