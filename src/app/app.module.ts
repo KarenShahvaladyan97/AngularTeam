@@ -9,6 +9,8 @@ import { FooterComponent } from './components/footer-item/footer-item.component'
 import { EmployesComponent } from './components/employes/employes.component';
 import { EmployeComponent } from './components/employes/employe/employe.component';
 
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectUserComponent } from './components/project-user/project-user.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { EmployeComponent } from './components/employes/employe/employe.componen
     FooterComponent,
     EmployesComponent,
     EmployeComponent,
+    ProjectsComponent,
+    ProjectUserComponent,
   ],
   imports: [
     BrowserModule,
