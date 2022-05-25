@@ -1,0 +1,23 @@
+<div class="mainContain">
+    <div class="marginDiv"></div>
+    <div class="containIconsDiv">
+        <span class="birdText">Bids</span>
+        <div class="miniIcons">
+            <img src="../../../assets/Group 74.png" alt="#" class="containIcon">
+            <img src="../../../assets/Group 73.png" alt="#" class="containIcon">
+        </div>
+    </div>
+    <div class="chengDiv">
+        <span class="chengSpan">Source</span>
+        <span class="chengSpan2">Applied date</span>
+        <span class="chengSpan3">Direction</span>
+        <span class="chengSpan4">Client Name</span>
+        <span class="chengSpan5">Duration</span>
+        <span class="chengSpan6">Description</span>
+    </div>
+    <div class="contain">
+        <div class="bigDiv1" *ngFor="let itm of containItems">
+            <app-transations-page [item]="itm"></app-transations-page>
+        </div>
+    </div>
+</div>

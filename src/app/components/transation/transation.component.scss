@@ -1,0 +1,198 @@
+.mainContain {
+    width: 100%;
+    min-height: 735px;
+    background-color: #E9F1F1;
+}
+
+.contain {
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    border-radius: 8px;
+}
+
+.containIconsDiv {
+    width: 100%;
+    height: 115px;
+    justify-content: end;
+    align-items: center;
+    margin-right: 53px;
+    padding: 40px;
+}
+
+.miniIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 110px;
+    height: 43px;
+    margin-right: 53px;
+    float: right;
+}
+
+.containIcon {
+    width: 43px;
+    height: 43px;
+}
+
+.bigCub {
+    width: 1230px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.birdText {
+    font-size: 25px;
+}
+
+.chengDiv {
+    border: none;
+    height: 50px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    padding: 0px;
+}
+
+.chengSpan {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan2 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 110px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan3 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 66px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan4 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 85px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan5 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 75px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.chengSpan6 {
+    margin: 15px;
+    color: rgb(160, 160, 160);
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-left: 120px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.bigDiv1 {
+    border: 1px solid rgb(255, 255, 255);
+    width: 100%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 8px;
+    display: flex;
+}
+
+.iconDiv {
+    border: none;
+    width: 15%;
+    height: 100px;
+}
+
+.dataDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 15%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.directionDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 15%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.clientDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 15%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.durationDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 15%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.descriptionDiv {
+    border-left: 1px solid #bfbfbf;
+    width: 25%;
+    height: 56px;
+    text-align: center;
+    line-height: 55px;
+    margin-top: 18px;
+    font-size: 17px;
+    color: #4e4e4e;
+}
+
+.lastSpan {
+    display: block;
+    margin-top: 11px;
+    line-height: 21px;
+}
+
+.imgStyle {
+    margin: 30px;
+    width: 120px;
+}

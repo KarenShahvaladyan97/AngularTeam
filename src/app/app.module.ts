@@ -11,6 +11,8 @@ import { EmployeComponent } from './components/employes/employe/employe.componen
 
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectUserComponent } from './components/project-user/project-user.component';
+import { TransationsPageComponent } from './components/transations-page/transations-page.component';
+import { TransationComponent } from './components/transation/transation.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { ProjectUserComponent } from './components/project-user/project-user.com
     EmployeComponent,
     ProjectsComponent,
     ProjectUserComponent,
+    TransationsPageComponent,
+    TransationComponent,
   ],
   imports: [
     BrowserModule,
