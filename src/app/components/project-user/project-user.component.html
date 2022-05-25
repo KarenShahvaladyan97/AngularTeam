@@ -1,0 +1,37 @@
+
+
+    <div class="profileLineDiv">
+        <img src="{{projectItem.icon}}" alt="#" class="stageAppLogo">
+        <img src="../../../assets/dots.png" alt="#" class="dots">
+    </div>
+
+    <div class="profileImageName">
+        <div class="ex">
+            <img src="{{projectItem.clientContact.img}}" alt="#" class="profilelogo">
+            <span class="text text1"> {{projectItem.clientContact.name}}</span>
+        </div>
+        <div class="centerFlex">
+            <span class="tag">{{projectItem.status}}</span>
+        </div>
+    </div>
+    <div class="developersDiv">
+        <span class="text"> Developers </span>
+        <div class="iconsDiv">
+            <img src="{{i.img}}" alt="#" class="image position" *ngFor="let i of projectItem.developers">            
+        </div>
+    </div>
+    <div class="developersDiv">
+        <span class="text"> Tecnologies </span>
+        <div class="mysql" >
+            <span class="programs" *ngFor="let k of projectItem.technologies">{{k}}</span>
+           
+        </div>
+        <span class="text"> Task Complated </span>
+    </div>
+
+    <div class="lastDiv">
+        <div class="tokosDiv">
+            <span class="tokos">{{projectItem.taskCompleted}} %</span>
+        </div>
+        <img src="../../../assets/mountain.png" alt="#" class="lastImage">
+    </div>
