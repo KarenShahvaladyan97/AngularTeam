@@ -7,9 +7,9 @@ import { TransationComponent } from './components/transation/transation.componen
 
 const routes: Routes = [
   {
-    path:'',
-    redirectTo:'/projects',
-    pathMatch:'full'
+    path: '',
+    redirectTo: '/projects',
+    pathMatch: 'full'
   },
   {
     path: 'projects',
@@ -19,13 +19,12 @@ const routes: Routes = [
     path: 'employees',
     component: EmployesComponent
   },
-
   {
     path:'reports',
     component:ReportsComponent
   },
   {
-    path:'transations',
+    path:'transactions',
     component:TransationComponent,
   }
 ];
@@ -34,4 +33,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

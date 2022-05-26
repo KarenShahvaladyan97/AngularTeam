@@ -12,7 +12,8 @@ export class SideNavComponent implements OnInit {
   public menuItems = [
     {
       tittle: 'Dshboard',
-      icon: '../../../assets/menu.png'
+      icon: '../../../assets/menu.png',
+
     },
     {
       tittle: 'Reports',
@@ -22,17 +23,17 @@ export class SideNavComponent implements OnInit {
     {
       tittle: 'Financial',
       icon: '../../../assets/money.png',
-      path:'/transations'
+      path: '/transactions'
     },
     {
       tittle: 'Projects',
       icon: '../../../assets/1.png',
-      path:'/projects'
+      path: '/projects'
     },
     {
       tittle: 'Employee Information',
       icon: '../../../assets/2.png',
-      path:'/employees'
+      path: '/employees'
     },
     
     
