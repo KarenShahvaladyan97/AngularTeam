@@ -1,0 +1,12 @@
+.main {
+    width: calc(100vw - 277px);
+    min-width: 1069px;
+    min-height: calc(100vh - 80px);
+    background-color: #E9F1F1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 180px;
+}
