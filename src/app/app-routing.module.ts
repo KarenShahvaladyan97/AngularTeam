@@ -8,7 +8,7 @@ import { TransationComponent } from './components/transation/transation.componen
 const routes: Routes = [
   {
     path:'',
-    redirectTo:'projects',
+    redirectTo:'/projects',
     pathMatch:'full'
   },
   {
@@ -19,13 +19,14 @@ const routes: Routes = [
     path: 'employees',
     component: EmployesComponent
   },
-  {
-    path:'transation',
-    component:TransationComponent
-  },
+
   {
     path:'reports',
     component:ReportsComponent
+  },
+  {
+    path:'transations',
+    component:TransationComponent,
   }
 ];
 
