@@ -20,6 +20,10 @@ const routes: Routes = [
     component: EmployesComponent
   },
   {
+    path: 'employees/:id',
+    component: EmployesComponent
+  },
+  {
     path:'reports',
     component:ReportsComponent
   },

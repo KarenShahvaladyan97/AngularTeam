@@ -12,7 +12,7 @@
         </div>
 
         <div class="bigCub">
-            <app-employe *ngFor="let item of usersList" [user]="item"></app-employe>
+            <app-employe *ngFor="let item of usersList" [user]="item" (click)="navigate(item.id)"></app-employe>
         </div>
     </div>
 

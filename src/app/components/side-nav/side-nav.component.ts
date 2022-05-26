@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import {ActivatedRoute, Route, Router} from "@angular/router";
 
 @Component({
   selector: 'app-side-nav',
@@ -7,7 +8,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class SideNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {
+
+  }
 
   public menuItems = [
     {
@@ -35,9 +38,9 @@ export class SideNavComponent implements OnInit {
       icon: '../../../assets/2.png',
       path: '/employees'
     },
-    
-    
-    
+
+
+
   ]
 
   public menuSettingsItems = [
@@ -61,12 +64,16 @@ export class SideNavComponent implements OnInit {
       submenuItems: []
     }]
 
-   
-    
+
+
 
   ngOnInit(): void {
   }
 
+  navigate(path: any) {
+    this.router.navigate([path])
 
+
+  }
 
 }
