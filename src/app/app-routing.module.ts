@@ -20,12 +20,12 @@ const routes: Routes = [
     component: EmployesComponent
   },
   {
-    path: 'transactions',
-    component: TransationComponent
+    path:'reports',
+    component:ReportsComponent
   },
   {
-    path: "reports",
-    component: ReportsComponent
+    path:'transactions',
+    component:TransationComponent,
   }
 ];
 

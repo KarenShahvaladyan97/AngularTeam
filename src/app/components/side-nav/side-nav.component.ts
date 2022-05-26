@@ -18,7 +18,7 @@ export class SideNavComponent implements OnInit {
     {
       tittle: 'Reports',
       icon: '../../../assets/statistic.png',
-      path: "/reports"
+      path:'/reports'
     },
     {
       tittle: 'Financial',
@@ -35,7 +35,9 @@ export class SideNavComponent implements OnInit {
       icon: '../../../assets/2.png',
       path: '/employees'
     },
-
+    
+    
+    
   ]
 
   public menuSettingsItems = [
