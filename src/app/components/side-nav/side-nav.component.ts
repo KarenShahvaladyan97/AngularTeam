@@ -20,17 +20,22 @@ export class SideNavComponent implements OnInit {
     },
     {
       tittle: 'Financial',
-      icon: '../../../assets/money.png'
+      icon: '../../../assets/money.png',
+      path:'/transations'
     },
     {
       tittle: 'Projects',
-      icon: '../../../assets/1.png'
+      icon: '../../../assets/1.png',
+      path:'/projects'
     },
     {
       tittle: 'Employee Information',
-      icon: '../../../assets/2.png'
+      icon: '../../../assets/2.png',
+      path:'/employees'
     },
-
+    
+    
+    
   ]
 
   public menuSettingsItems = [
