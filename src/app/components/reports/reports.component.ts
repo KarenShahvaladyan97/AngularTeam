@@ -1,13 +1,12 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-side-nav',
-  templateUrl: './side-nav.component.html',
-  styleUrls: ['./side-nav.component.scss']
+  selector: 'app-reports',
+  templateUrl: './reports.component.html',
+  styleUrls: ['./reports.component.scss']
 })
-export class SideNavComponent implements OnInit {
+export class ReportsComponent implements OnInit {
 
-  constructor() { }
 
   public menuItems = [
     {
@@ -16,27 +15,24 @@ export class SideNavComponent implements OnInit {
     },
     {
       tittle: 'Reports',
-      icon: '../../../assets/statistic.png',
-      path:'/reports'
+      icon: '../../../assets/statistic.png'
     },
     {
       tittle: 'Financial',
       icon: '../../../assets/money.png',
-      path:'/transations'
+      path:'/transation'
     },
     {
       tittle: 'Projects',
       icon: '../../../assets/1.png',
-      path:'/projects'
+      path:'/projects',
     },
     {
       tittle: 'Employee Information',
       icon: '../../../assets/2.png',
-      path:'/employees'
+      path:'/employees',
     },
-    
-    
-    
+
   ]
 
   public menuSettingsItems = [
@@ -60,12 +56,9 @@ export class SideNavComponent implements OnInit {
       submenuItems: []
     }]
 
-   
-    
+  constructor() { }
 
   ngOnInit(): void {
   }
-
-
 
 }
