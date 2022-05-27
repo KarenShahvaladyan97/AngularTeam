@@ -14,6 +14,7 @@ import { ProjectUserComponent } from './components/project-user/project-user.com
 import { TransationsPageComponent } from './components/transations-page/transations-page.component';
 import { TransationComponent } from './components/transation/transation.component';
 import { ReportsComponent } from './components/reports/reports.component';
+import { EmployeInfoComponent } from './components/employes/employe-info/employe-info.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { ReportsComponent } from './components/reports/reports.component';
     TransationsPageComponent,
     TransationComponent,
     ReportsComponent,
+    EmployeInfoComponent,
   ],
   imports: [
     BrowserModule,
