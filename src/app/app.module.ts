@@ -15,6 +15,11 @@ import { TransationsPageComponent } from './components/transations-page/transati
 import { TransationComponent } from './components/transation/transation.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { EmployeInfoComponent } from './components/employes/employe-info/employe-info.component';
+import { ProjectInfoComponent } from './components/project-info/project-info.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectFormComponent } from './project-form/project-form.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -31,10 +36,16 @@ import { EmployeInfoComponent } from './components/employes/employe-info/employe
     TransationComponent,
     ReportsComponent,
     EmployeInfoComponent,
+    ProjectInfoComponent,
+    ProjectFormComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

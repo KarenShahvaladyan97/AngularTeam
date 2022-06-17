@@ -10,23 +10,19 @@
             </div>
         </div>
 
-        <div class="createButtonDiv">
+        <div class="createButtonDiv" [routerLink]="['/projects/add']">
             <img src="../../../assets/createLogo.png" alt="#" class="createLogo">
             <span class="createText"> Create project </span>
         </div>
     </div>
 
-
+   nb
     <div class="myContainer" >
 
-        <!-- <div class="cub" *ngFor="let i of containItems">
-            <span class="cubText">{{i.tittle}}</span>
-            <img src="{{i.img}}" alt="#" class="dotsIcon">
-        </div>   -->
-        <div class="profileBigDiv" *ngFor="let i of projectItemsArray">        
-        <app-project-user [projectItem]="i" ></app-project-user>
+        <div class="profileBigDiv" *ngFor="let i of projectItemsArray">
+        <app-project-user [projectItem]="i" (click)="navigate(i.id)"></app-project-user>
     </div>
-    
+
     </div>
 
 

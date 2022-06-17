@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {HeaderService} from '../../services/header.service'
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private headerService: HeaderService
+  ) { }
 
 public user = {
   firstName: 'John',
@@ -15,10 +17,16 @@ public user = {
   img: '../../../assets/free-profile-photo-whatsapp-4 2.png' 
 }
 
+public title: string;
 
 
 
-  ngOnInit(): void {
+  ngOnInit(): void {   
+    this.headerService.headerTitle.subscribe((title:any)=>{
+     this.title = title      
+    })
+
+  
   }
 
 }

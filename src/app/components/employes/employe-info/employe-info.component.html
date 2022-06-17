@@ -1,1 +1,20 @@
-<p>alo</p>
+<div class="mainContain">
+    <div class="infoDiv">
+        <div class="left">
+            <span> Name: </span>
+            <span> Prof: </span>
+            <span> Addres: </span>
+            <span> Phone: </span>
+        </div>
+
+        <div class="left">
+            <span> {{user?.fullName}} </span>
+            <span>{{user?.profession}}</span>
+            <span>{{user?.addres}}</span>
+            <span>{{user?.phone}}</span>
+        </div>
+
+
+    </div>
+    <img [src]=user?.img alt="#" class="myimage">
+</div>

@@ -10,6 +10,7 @@ import { Client } from "./client";
 // }
 
 export interface Project {
+        id: any;
         title: string;
         icon: string;
         clientContact: Client;      

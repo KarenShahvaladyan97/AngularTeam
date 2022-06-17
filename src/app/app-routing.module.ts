@@ -5,6 +5,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ReportsComponent } from './components/reports/reports.component';
 import { TransationComponent } from './components/transation/transation.component';
 import {EmployeInfoComponent} from "./components/employes/employe-info/employe-info.component";
+import { ProjectInfoComponent } from './components/project-info/project-info.component';
+import { ProjectFormComponent } from './project-form/project-form.component';
+
 
 const routes: Routes = [
   {
@@ -15,6 +18,15 @@ const routes: Routes = [
   {
     path: 'projects',
     component: ProjectsComponent
+  },
+ 
+  {
+    path: 'projects/add',
+    component: ProjectFormComponent
+  },
+  {
+    path: 'projects/:id',
+    component: ProjectInfoComponent
   },
   {
     path: 'employees',

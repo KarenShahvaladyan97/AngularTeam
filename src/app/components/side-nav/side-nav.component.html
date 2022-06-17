@@ -6,7 +6,7 @@
         </div>
 
 
-        <div class="line" [id]="item" *ngFor="let item of menuItems" (click)="navigate(item.path)">
+        <div class="line" [id]="item" *ngFor="let item of menuItems" [routerLink]="item.path" (click)="navigate(item)">
             <img src="{{item.icon}}" alt="#" class="icon">
             <span class="iconText"> {{item.tittle}} </span>
         </div>

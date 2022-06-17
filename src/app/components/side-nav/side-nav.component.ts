@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {ActivatedRoute, Route, Router} from "@angular/router";
+import { HeaderService } from 'src/app/services/header.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -8,7 +9,7 @@ import {ActivatedRoute, Route, Router} from "@angular/router";
 })
 export class SideNavComponent implements OnInit {
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private headerService: HeaderService) {
 
   }
 
@@ -16,6 +17,7 @@ export class SideNavComponent implements OnInit {
     {
       tittle: 'Dshboard',
       icon: '../../../assets/menu.png',
+      path: '/dashboard'
 
     },
     {
@@ -70,8 +72,9 @@ export class SideNavComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  navigate(path: any) {
-    this.router.navigate([path])
+  navigate(item: any) {
+    this.router.navigate([item.path]);
+this.headerService.setHeaderTitle(item.tittle)
 
 
   }

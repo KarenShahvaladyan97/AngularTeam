@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import { Project } from '../models/project';
 import {User} from "../models/user";
 
 @Injectable({
@@ -35,7 +36,7 @@ export class UsersListService {
       phone: 37498242565
     },
     {
-      id: 3,
+      id: 4,
       img: '../../../assets/employeImages/user3.jpg',
       profession: 'Project Manager',
       fullName: 'Ani Petrosyan',
@@ -43,7 +44,7 @@ export class UsersListService {
       phone: 37498242565
     },
     {
-      id: 1,
+      id: 5,
       img: '../../../assets/employeImages/user4.jpg',
       profession: 'SMM',
       fullName: 'Yulia Torosyan',
@@ -51,7 +52,7 @@ export class UsersListService {
       phone: 37498242565
     },
     {
-      id: 1,
+      id: 6,
       img: '../../../assets/employeImages/user5.jpg',
       profession: 'UI/UX Designer',
       fullName: 'Anahit Grigoryan',
@@ -59,7 +60,7 @@ export class UsersListService {
       phone: 37498242565
     },
     {
-      id: 1,
+      id: 7,
       img: '../../../assets/employeImages/user6.jpg',
       profession: 'iOS Developer',
       fullName: 'Vardan Urumyan',
@@ -67,7 +68,7 @@ export class UsersListService {
       phone: 37498242565
     },
     {
-      id: 1,
+      id: 8,
       img: '../../../assets/employeImages/user7.jpg',
       profession: 'Java Developer',
       fullName: 'Armen Harutyunyan',
@@ -75,7 +76,7 @@ export class UsersListService {
       phone: 37498242565
     },
     {
-      id: 1,
+      id: 9,
       img: '../../../assets/employeImages/user8.jpg',
       profession: 'Php Developer',
       fullName: 'Argam tevanyan',
@@ -83,12 +84,15 @@ export class UsersListService {
       phone: 37498242565
     },
     {
-      id: 1,
+      id: 10,
       img: '../../../assets/employeImages/user9.jpg',
       profession: 'Node Developer',
       fullName: 'Hendo Karapetyan',
       addres: 'Gortsaranayin street 5, apt.106',
       phone: 37498242565
     }
-  ]
+  ];
+
+
+ 
 }
