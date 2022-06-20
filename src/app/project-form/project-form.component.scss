@@ -1,0 +1,36 @@
+.container{
+    width: calc(100vw - 260px);
+
+    div{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;  
+        justify-content: space-around;
+
+    }    
+}
+
+.large{
+    width: 260px;
+}
+
+.large2{
+    width: 30%;
+}
+
+.textArea{
+    margin-left: 18px;
+    width: 97%;    
+}
+
+.example-margin{
+    margin-left: 18px;   
+}
+
+button{
+    font-size: 26px;
+    margin-right: 50px;
+    float: right;
+    width: 120px;
+    height: 40px;
+}

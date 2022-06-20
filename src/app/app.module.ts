@@ -8,6 +8,7 @@ import { ContainComponent } from './components/contain/contain.component';
 import { FooterComponent } from './components/footer-item/footer-item.component';
 import { EmployesComponent } from './components/employes/employes.component';
 import { EmployeComponent } from './components/employes/employe/employe.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectUserComponent } from './components/project-user/project-user.component';
@@ -20,6 +21,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectFormComponent } from './project-form/project-form.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -45,7 +48,12 @@ import {MatInputModule} from '@angular/material/input';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    ReactiveFormsModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
