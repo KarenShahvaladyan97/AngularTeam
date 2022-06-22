@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/user';
 import {ActivatedRoute, Router} from "@angular/router";
 import { UsersListService } from 'src/app/services/users-list.service';
+import { GlobalsService } from 'src/app/services/globals.service';
 
 @Component({
   selector: 'app-employes',
@@ -14,12 +15,16 @@ export class EmployesComponent implements OnInit {
   constructor(
     private route: ActivatedRoute, 
     private router: Router,
-    private userService: UsersListService
+    private userService: UsersListService,
+    private global: GlobalsService
     ) {     
-      this.usersList = this.userService.usersList;      
+            
   }
 
   ngOnInit(): void {
+    this.global.getEmployes().subscribe(employe => 
+      this.usersList = employe)
+
   }
 
   navigate(id: any) {
