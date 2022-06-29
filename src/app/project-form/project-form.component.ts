@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Country } from '../models/country';
 import { GlobalsService } from '../services/globals.service';
+import { PdrojectListService } from '../services/pdroject-list.service';
+import {COMMA, ENTER} from '@angular/cdk/keycodes';
+import {MatChipInputEvent} from '@angular/material/chips';
+import { _isTestEnvironment } from '@angular/cdk/platform';
+
 
 @Component({
   selector: 'app-project-form',
@@ -10,7 +15,33 @@ import { GlobalsService } from '../services/globals.service';
 })
 export class ProjectFormComponent implements OnInit {
 
-  constructor( private global:GlobalsService) { }
+  constructor( private global:GlobalsService, private project: PdrojectListService ) { }
+
+
+
+  addOnBlur = true;
+  readonly separatorKeysCodes = [ENTER, COMMA] as const;
+  mytecnologies:any = []
+
+  add(event: MatChipInputEvent): void {
+    const value = (event.value || '').trim();
+
+    // Add our fruit
+    if (value) {
+      this.mytecnologies.push(value);
+    }
+
+    // Clear the input value
+    event.chipInput!.clear();
+  }
+
+  remove(item: any): void {
+    const index = this.mytecnologies.indexOf(_isTestEnvironment);
+
+    if (index >= 0) {
+      this.mytecnologies.splice(index, 1);
+    }
+  }
 
   status = ["Ongoing", "Finished", "Edited"];
 
@@ -24,16 +55,27 @@ export class ProjectFormComponent implements OnInit {
       country: new FormControl("", [Validators.required]),
       client: new FormControl("", [Validators.required]),
       details2: new FormControl("", [Validators.required]),
-      name: new FormControl("", [Validators.required]),
-      country2: new FormControl("", [Validators.required]),
-      city: new FormControl("", [Validators.required]),
-      bankName: new FormControl("", [Validators.required]),
-      address: new FormControl("", [Validators.required]),
-      swiftCode: new FormControl("", [Validators.required]),
+      tecnologies: new FormControl([], [Validators.required])
+      // name: new FormControl("", [Validators.required]),
+      // country2: new FormControl("", [Validators.required]),
+      // city: new FormControl("", [Validators.required]),
+      // bankName: new FormControl("", [Validators.required]),
+      // address: new FormControl("", [Validators.required]),
+      // swiftCode: new FormControl("", [Validators.required]),
 
     })
 
-
+    myFunc(){
+      const a ={
+        ...this.myForm.value,
+        tecnologies: this.mytecnologies
+      }
+     
+      this.project.addproject(a);
+      
+  
+        
+    }
   ngOnInit(): void {
 this.global.getCoutries().subscribe(country =>{
   this.countries = country

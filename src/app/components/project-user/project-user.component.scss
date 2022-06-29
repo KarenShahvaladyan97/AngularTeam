@@ -118,6 +118,8 @@
     margin-top: 2px;
     width: 100%;    
     margin-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
 }
 .developersDiv{
     width: 100%;       
@@ -214,4 +216,23 @@
 .lastImage{
     width: 95px;
     height: 30px;
+}
+
+.main{
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dotsDiv{
+    width: 40px;
+    height: 20px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dotsDiv:hover{
+    cursor: pointer;
 }

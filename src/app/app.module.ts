@@ -10,7 +10,8 @@ import { EmployesComponent } from './components/employes/employes.component';
 import { EmployeComponent } from './components/employes/employe/employe.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-
+import {MatChipsModule} from '@angular/material/chips';
+import {MatIconModule} from '@angular/material/icon';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectUserComponent } from './components/project-user/project-user.component';
 import { TransationsPageComponent } from './components/transations-page/transations-page.component';
@@ -24,6 +25,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatMenuModule} from '@angular/material/menu';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatSelectModule,
     MatCheckboxModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatChipsModule,
+    MatIconModule,
+    MatMenuModule
 
   ],
   providers: [],

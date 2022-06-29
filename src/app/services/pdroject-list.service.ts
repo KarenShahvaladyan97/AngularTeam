@@ -5,120 +5,30 @@ import { Project } from '../models/project';
   providedIn: 'root'
 })
 export class PdrojectListService {
+  public projectItemsArray: Project[]
+  constructor() {
+    const project:any = localStorage.getItem('project')
+    const arr: any = JSON.parse(project)
+    this.projectItemsArray = arr || []
+   }
 
-  constructor() { }
 
-  public projectItemsArray: Project[] = [
-    {
-      id:1,
-      clientContact: {
-        name: "Poxos Poxosyan",
-        img: "../../../assets/prof1.png"
-      },
-      title: 'Stage App',
-      icon: "../../../assets/stageApp.png",
-      developers: [
-        {
-          img: "../../../assets/prof1.png",
-          profession: "driver",
-          fullName: "Vardan",
-          addres: "Gyumri",
-          phone: 37477775747
-        },
-        {
-          img: "../../../assets/prof2.png",
-          profession: "groxusevcav",
-          fullName: "Arman",
-          addres: "Erevan",
-          phone: 37477775747
-        },
-        {
-          img: "../../../assets/prof3.png",
-          profession: "driver",
-          fullName: "Vardan",
-          addres: "Gyumri",
-          phone: 37477775747
-        }
-      ],          
-      status: 'Finished',
-      technologies: [
-        "Stripe", "MySQL", "YII/YII2", "Angular"
-      ],
-      taskCompleted: 98
-    },
-    {
-      id:2,
-      clientContact: {
-        name: "grox u sev cav",
-        img: "../../../assets/prof2.png"
-      },
-      title: 'Stage App',
-      icon: "../../../assets/stageApp.png",
-      developers: [
-        {
-          img: "../../../assets/prof3.png",
-          profession: "driver",
-          fullName: "Vardan",
-          addres: "Gyumri",
-          phone: 37477775747
-        },
-        {
-          img: "../../../assets/prof1.png",
-          profession: "groxusevcav",
-          fullName: "Arman",
-          addres: "Erevan",
-          phone: 37477775747
-        },
-        {
-          img: "../../../assets/prof2.png",
-          profession: "driver",
-          fullName: "Vardan",
-          addres: "Gyumri",
-          phone: 37477775747
-        }
-      ],          
-      status: 'Finished',
-      technologies: [
-        "React", "Java", "Angular", "Pytom"
-      ],
-      taskCompleted: 75
-    },
-    {
-      id:3,
-      clientContact: {
-        name: "Vardan Mamikonyan",
-        img: "../../../assets/prof3.png"
-      },
-      title: 'Stage App',
-      icon: "../../../assets/stageApp.png",
-      developers: [
-        {
-          img: "../../../assets/prof2.png",
-          profession: "driver",
-          fullName: "Vardan",
-          addres: "Gyumri",
-          phone: 37477775747
-        },
-        {
-          img: "../../../assets/prof1.png",
-          profession: "groxusevcav",
-          fullName: "Arman",
-          addres: "Erevan",
-          phone: 37477775747
-        },
-        {
-          img: "../../../assets/prof3.png",
-          profession: "driver",
-          fullName: "Vardan",
-          addres: "Gyumri",
-          phone: 37477775747
-        }
-      ],          
-      status: 'Pending',
-      technologies: [
-        "Angular", "React", "MySQL", "YII/YII2"
-      ],
-      taskCompleted: 89
-    }
-  ]
+
+  addproject(value: any) {
+    
+    this.projectItemsArray.push(value)
+
+
+    localStorage.setItem('project', JSON.stringify(this.projectItemsArray))
+  }
+
+
 }
+
+// id: any;
+// details: string;
+// details2:string;
+// icon: string;
+// client:string;     
+// status:string;
+// country:string

@@ -10,18 +10,13 @@ import { Client } from "./client";
 // }
 
 export interface Project {
-        id: any;
-        title: string;
-        icon: string;
-        clientContact: Client;      
+        
+        details: string;
+        details2:string;        
+        client:string;     
         status:string;
-        developers: {
-                img: string;
-                profession: string;
-                fullName: string;
-                addres: string;
-                phone: number;
-        }[];
-        technologies: string[];
-        taskCompleted: number;
+        country:string;
+        tecnologies:string[]
+      
+      
 }

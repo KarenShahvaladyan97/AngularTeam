@@ -20,7 +20,7 @@ export class ProjectInfoComponent implements OnInit {
       this.projectList = this.userService.projectItemsArray;
       if(param.id){
         console.log(param.id)
-        this.user = this.projectList.find((item)=> item.id===Number(param.id))
+        // this.user = this.projectList.find((item)=> item.id===Number(param.id))
       }
 
     })

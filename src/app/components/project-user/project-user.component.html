@@ -1,37 +1,41 @@
+<main class="main">
+
+<div>
 
 
     <div class="profileLineDiv">
-        <img src="{{projectItem.icon}}" alt="#" class="stageAppLogo">
-        <img src="../../../assets/dots.png" alt="#" class="dots">
+        <img src="../../../assets/stageApp.png" alt="#" class="stageAppLogo">
+        <div class="dotsDiv" [matMenuTriggerFor]="menu">
+        <img src="../../../assets/dots.png" alt="#" class="dots" >
+    </div>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Edit</button>
+  <button mat-menu-item (click)="deleteUser(index)" >Delete</button>
+</mat-menu>
     </div>
 
     <div class="profileImageName">
         <div class="ex">
-            <img src="{{projectItem.clientContact.img}}" alt="#" class="profilelogo">
-            <span class="text text1"> {{projectItem.clientContact.name}}</span>
+            <img src="../../../assets/prof1.png" alt="#" class="profilelogo">
+            <span class="text text1"> {{projectItem.client}}</span>
         </div>
         <div class="centerFlex">
             <span class="tag">{{projectItem.status}}</span>
+            
         </div>
     </div>
-    <div class="developersDiv">
-        <span class="text"> Developers </span>
-        <div class="iconsDiv">
-            <img src="{{i.img}}" alt="#" class="image position" *ngFor="let i of projectItem.developers">            
-        </div>
-    </div>
+
+    <span >Description</span>
+    <p> {{projectItem.details2}}</p>
+</div>
     <div class="developersDiv">
         <span class="text"> Tecnologies </span>
         <div class="mysql" >
-            <span class="programs" *ngFor="let k of projectItem.technologies">{{k}}</span>
+            <span class="programs"  *ngFor="let i of projectItem.tecnologies">{{i}}</span>
+           
            
         </div>
-        <span class="text"> Task Complated </span>
+        
     </div>
 
-    <div class="lastDiv">
-        <div class="tokosDiv">
-            <span class="tokos">{{projectItem.taskCompleted}} %</span>
-        </div>
-        <img src="../../../assets/mountain.png" alt="#" class="lastImage">
-    </div>
+</main>

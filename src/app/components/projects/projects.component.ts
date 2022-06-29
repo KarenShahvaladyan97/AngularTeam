@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { Project } from 'src/app/models/project';
 import { PdrojectListService } from 'src/app/services/pdroject-list.service';
 @Component({
@@ -14,8 +14,15 @@ export class ProjectsComponent implements OnInit {
     private router: Router,
     private projectItem: PdrojectListService
   ) { 
+
     this.projectItemsArray = this.projectItem.projectItemsArray
   }
+
+  myFunc(event:[]){   
+    this.projectItemsArray = event
+  }
+
+
 
 
   ngOnInit(): void {

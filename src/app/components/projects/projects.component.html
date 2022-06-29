@@ -19,8 +19,9 @@
   
     <div class="myContainer" >
 
-        <div class="profileBigDiv" *ngFor="let i of projectItemsArray">
-        <app-project-user [projectItem]="i" (click)="navigate(i.id)"></app-project-user>
+        <div class="profileBigDiv" *ngFor="let i of projectItemsArray;  let index=index">
+            
+        <app-project-user [projectItem]="i" [index]="index" (deleteEmiter)="myFunc($event)" ></app-project-user>
     </div>
 
     </div>
